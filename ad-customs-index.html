@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AD Customs | Used Vehicle Import Guide – Japan to Papua New Guinea</title>
+    <meta name="description" content="Professional customs clearance and logistics solutions for importing used vehicles from Japan and other countries to Papua New Guinea. Safe, Compliant, On Time.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a3d6b;
+            --primary-dark: #072a4a;
+            --primary-light: #0e5a9a;
+            --accent: #00a3e0;
+            --accent-hover: #008cc0;
+            --success: #00a651;
+            --warning: #e67e22;
+            --text: #1a1a2e;
+            --text-light: #4a5568;
+            --bg: #f7fafc;
+            --white: #ffffff;
+            --border: #e2e8f0;
+            --shadow: 0 4px 20px rgba(10, 61, 107, 0.08);
+            --shadow-lg: 0 10px 40px rgba(10, 61, 107, 0.12);
+            --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header */
+        header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+        .header-top { background: rgba(0,0,0,0.2); padding: 8px 0; font-size: 0.85rem; }
+        .header-top .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .header-top a { color: rgba(255,255,255,0.9); text-decoration: none; display: inline-flex; align-items: center; gap: 6px; }
+        .header-top a:hover { color: var(--accent); }
+        .nav-main { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: white; }
+        .logo-icon { width: 48px; height: 48px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; color: var(--primary); box-shadow: 0 2px 10px rgba(0,0,0,0.2); }
+        .logo-text h1 { font-size: 1.35rem; font-weight: 800; letter-spacing: -0.5px; line-height: 1.2; }
+        .logo-text span { font-size: 0.72rem; opacity: 0.85; font-weight: 500; letter-spacing: 0.3px; }
+        nav ul { display: flex; list-style: none; gap: 4px; flex-wrap: wrap; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+        nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: white; }
+        .mobile-toggle { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+        /* Hero */
+        .hero { background: linear-gradient(135deg, var(--primary) 0%, #0a4d8c 50%, var(--primary-dark) 100%); color: white; padding: 70px 0 90px; position: relative; overflow: hidden; }
+        .hero-content { position: relative; z-index: 1; display: grid; grid-template-columns: 1.2fr 1fr; gap: 50px; align-items: center; }
+        .hero-badge { display: inline-block; background: rgba(0,163,224,0.2); border: 1px solid rgba(0,163,224,0.4); color: #7dd3fc; padding: 6px 16px; border-radius: 50px; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px; margin-bottom: 18px; text-transform: uppercase; }
+        .hero h2 { font-size: 2.5rem; font-weight: 800; line-height: 1.2; margin-bottom: 18px; letter-spacing: -0.8px; }
+        .hero h2 span { color: var(--accent); }
+        .hero p { font-size: 1.1rem; opacity: 0.9; margin-bottom: 28px; max-width: 520px; }
+        .hero-features { display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 32px; }
+        .hero-feature { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 0.95rem; }
+        .hero-feature svg { width: 22px; height: 22px; fill: var(--success); }
+        .btn { display: inline-flex; align-items: center; gap: 8px; padding: 14px 28px; border-radius: 8px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: all 0.25s; border: none; cursor: pointer; }
+        .btn-primary { background: var(--accent); color: white; box-shadow: 0 4px 15px rgba(0,163,224,0.4); }
+        .btn-primary:hover { background: var(--accent-hover); transform: translateY(-2px); }
+        .btn-outline { background: transparent; color: white; border: 2px solid rgba(255,255,255,0.4); }
+        .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: white; }
+        .hero-buttons { display: flex; gap: 14px; flex-wrap: wrap; }
+        .hero-card { background: rgba(255,255,255,0.1); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius: 16px; padding: 28px; }
+        .hero-card h3 { font-size: 1.15rem; margin-bottom: 16px; }
+        .hero-card ul { list-style: none; }
+        .hero-card li { padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.1); display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; }
+        .hero-card li:last-child { border-bottom: none; }
+        .hero-card li span { background: var(--accent); color: white; width: 22px; height: 22px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; }
+
+        /* Sections */
+        section { padding: 70px 0; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header .eyebrow { display: inline-block; background: rgba(0,163,224,0.1); color: var(--accent); padding: 5px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; margin-bottom: 12px; }
+        .section-header h2 { font-size: 2.1rem; font-weight: 800; color: var(--primary); margin-bottom: 12px; }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; font-size: 1.05rem; }
+
+        .overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+        .overview-card { background: white; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); border: 1px solid var(--border); transition: all 0.3s; position: relative; overflow: hidden; }
+        .overview-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .overview-card .num { position: absolute; top: 16px; right: 20px; font-size: 2.5rem; font-weight: 800; color: rgba(10,61,107,0.07); line-height: 1; }
+        .overview-card .icon { width: 52px; height: 52px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 18px; color: white; font-size: 1.4rem; }
+        .overview-card h3 { font-size: 1.15rem; font-weight: 700; margin-bottom: 10px; color: var(--primary); }
+        .overview-card p { color: var(--text-light); font-size: 0.95rem; }
+
+        .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+        .service-card { background: white; border-radius: var(--radius); padding: 32px; box-shadow: var(--shadow); border: 1px solid var(--border); text-align: center; transition: all 0.3s; }
+        .service-card:hover { transform: translateY(-5px); box-shadow: var(--shadow-lg); }
+        .service-card .icon { width: 64px; height: 64px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px; font-size: 1.6rem; color: white; }
+        .service-card h3 { font-size: 1.2rem; font-weight: 700; color: var(--primary); margin-bottom: 12px; }
+        .service-card p { color: var(--text-light); font-size: 0.95rem; margin-bottom: 18px; }
+        .service-card a { color: var(--accent); font-weight: 600; text-decoration: none; }
+        .service-card a:hover { text-decoration: underline; }
+
+        .cta-section { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 70px 0; text-align: center; }
+        .cta-section h2 { font-size: 2rem; font-weight: 800; margin-bottom: 16px; }
+        .cta-section p { opacity: 0.9; max-width: 560px; margin: 0 auto 28px; font-size: 1.1rem; }
+        .cta-buttons { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+
+        /* Footer */
+        footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding: 40px 0 24px; font-size: 0.9rem; }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px; }
+        .footer-logo { display: flex; align-items: center; gap: 10px; color: white; font-weight: 700; font-size: 1.1rem; }
+        .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+        .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; }
+        .footer-links a:hover { color: white; }
+        .copyright { text-align: center; font-size: 0.85rem; }
+
+        @media (max-width: 900px) {
+            .hero-content { grid-template-columns: 1fr; }
+            .hero h2 { font-size: 2rem; }
+            nav ul { display: none; }
+            .mobile-toggle { display: block; }
+            nav.open ul { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--primary-dark); padding: 16px; gap: 4px; }
+        }
+        @media (max-width: 600px) {
+            .hero { padding: 50px 0 60px; }
+            .hero h2 { font-size: 1.7rem; }
+            section { padding: 50px 0; }
+            .section-header h2 { font-size: 1.7rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div style="display:flex;gap:20px;flex-wrap:wrap;">
+                <a href="tel:81897101">📞 8189 7101</a>
+                <a href="mailto:aubo.sere@dsv.com">✉️ aubo.sere@dsv.com</a>
+            </div>
+            <div style="font-weight:600;">Safe • Compliant • On Time</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-main">
+            <a href="ad-customs-index.html" class="logo">
+                <div class="logo-icon">AD</div>
+                <div class="logo-text">
+                    <h1>AD CUSTOMS</h1>
+                    <span>CLEARANCE & LOGISTICS SOLUTIONS</span>
+                </div>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('open')" aria-label="Menu">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="ad-customs-index.html" class="active">Home</a></li>
+                    <li><a href="ad-customs-about.html">About</a></li>
+                    <li><a href="ad-customs-process.html">Import Process</a></li>
+                    <li><a href="ad-customs-documents.html">Documents</a></li>
+                    <li><a href="ad-customs-clearance.html">Clearance</a></li>
+                    <li><a href="ad-customs-biosecurity.html">Biosecurity</a></li>
+                    <li><a href="ad-customs-contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <div>
+                <div class="hero-badge">Customs Clearance Guide Booklet</div>
+                <h2>Used Vehicle Import Guide & Procedures<br><span>From Japan & Other Countries to Papua New Guinea</span></h2>
+                <p>Clear, simple guidance on the entire process of importing used vehicles into PNG. Whether you are a buyer, dealer or importer — we make customs clearance simple, compliant and on time.</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Simple & Easy to Understand
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Compliant with PNG Laws
+                    </div>
+                    <div class="hero-feature">
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        Safe, Reliable & On Time
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="ad-customs-contact.html" class="btn btn-primary">Get Expert Assistance →</a>
+                    <a href="ad-customs-process.html" class="btn btn-outline">View Import Process</a>
+                </div>
+            </div>
+            <div class="hero-card">
+                <h3>🚛 Why Choose AD Customs?</h3>
+                <ul>
+                    <li><span>1</span> Your trusted partner in customs clearance, freight forwarding and logistics solutions</li>
+                    <li><span>2</span> End-to-end support from purchase in Japan to final registration in PNG</li>
+                    <li><span>3</span> Expert knowledge of PNG Customs, NAQIA and RTA requirements</li>
+                    <li><span>4</span> Transparent process with clear documentation checklists</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Overview -->
+<section>
+    <div class="container">
+        <div class="section-header">
+            <div class="eyebrow">How It Works</div>
+            <h2>Used Vehicle Import Overview</h2>
+            <p>PNG imports used vehicles mainly from Japan, Thailand, Australia, New Zealand, UK, USA and other countries. Here is the complete process.</p>
+        </div>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <div class="num">01</div>
+                <div class="icon">🛒</div>
+                <h3>Vehicle Purchase & Verification</h3>
+                <p>Purchase and thorough verification of the vehicle in the country of origin (mainly Japan).</p>
+            </div>
+            <div class="overview-card">
+                <div class="num">02</div>
+                <div class="icon">🚢</div>
+                <h3>Export & Shipping</h3>
+                <p>Export procedures, shipping arrangement (RoRo or Container) and freight forwarding to PNG.</p>
+            </div>
+            <div class="overview-card">
+                <div class="num">03</div>
+                <div class="icon">📋</div>
+                <h3>Customs Clearance (PNG)</h3>
+                <p>Lodgement of import declaration, classification, valuation, duty calculation and payment.</p>
+            </div>
+            <div class="overview-card">
+                <div class="num">04</div>
+                <div class="icon">🔬</div>
+                <h3>NAQIA / Biosecurity</h3>
+                <p>Biosecurity permit application, inspection and clearance certificate before release into PNG.</p>
+            </div>
+            <div class="overview-card">
+                <div class="num">05</div>
+                <div class="icon">🏗️</div>
+                <h3>Port & Terminal Procedures</h3>
+                <p>Wharf procedures, document submission, payment of charges and vehicle inspection.</p>
+            </div>
+            <div class="overview-card">
+                <div class="num">06</div>
+                <div class="icon">🚛</div>
+                <h3>Land Transport & Registration</h3>
+                <p>Delivery to inland destination and RTA inspection & registration to put the vehicle on the road.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Services / Pages -->
+<section style="background: white;">
+    <div class="container">
+        <div class="section-header">
+            <div class="eyebrow">Explore the Guide</div>
+            <h2>Complete Import Guide Sections</h2>
+            <p>Detailed information on every stage of importing used vehicles into Papua New Guinea</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="icon">📖</div>
+                <h3>Import Process</h3>
+                <p>Japan purchase, export process, shipping methods and transit times from origin to PNG.</p>
+                <a href="ad-customs-process.html">Learn more →</a>
+            </div>
+            <div class="service-card">
+                <div class="icon">📄</div>
+                <h3>Documents Required</h3>
+                <p>Full checklist of documents needed from Japan and PNG importer requirements.</p>
+                <a href="ad-customs-documents.html">View checklist →</a>
+            </div>
+            <div class="service-card">
+                <div class="icon">🏛️</div>
+                <h3>Customs Clearance</h3>
+                <p>Step-by-step clearance process, HS classification (8703) and valuation rules.</p>
+                <a href="ad-customs-clearance.html">See process →</a>
+            </div>
+            <div class="service-card">
+                <div class="icon">🔬</div>
+                <h3>Biosecurity & Ports</h3>
+                <p>NAQIA procedures, port & terminal rules, and the critical 30-day storage rule.</p>
+                <a href="ad-customs-biosecurity.html">Read more →</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+    <div class="container">
+        <h2>Let AD Customs Handle the Process</h2>
+        <p>So you can focus on what matters. Get professional customs clearance, freight forwarding and logistics support for your used vehicle imports into Papua New Guinea.</p>
+        <div class="cta-buttons">
+            <a href="ad-customs-contact.html" class="btn btn-primary">Contact Us Today</a>
+            <a href="tel:81897101" class="btn btn-outline">Call 8189 7101</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-icon" style="width:36px;height:36px;font-size:0.9rem;">AD</div>
+                AD CUSTOMS — Clearance & Logistics Solutions
+            </div>
+            <div class="footer-links">
+                <a href="ad-customs-index.html">Home</a>
+                <a href="ad-customs-about.html">About</a>
+                <a href="ad-customs-process.html">Process</a>
+                <a href="ad-customs-documents.html">Documents</a>
+                <a href="ad-customs-clearance.html">Clearance</a>
+                <a href="ad-customs-contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 AD Customs Clearance & Logistics Solutions. Your Cargo – Our Commitment.<br>
+            This guide provides general information. Always confirm current requirements with PNG Customs and Biosecurity PNG.
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biosecurity & Port Procedures | AD Customs – PNG Vehicle Import</title>
+    <meta name="description" content="NAQIA biosecurity procedures, port & terminal rules, and land transport options for used vehicle imports into Papua New Guinea.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0a3d6b; --primary-dark: #072a4a; --primary-light: #0e5a9a;
+            --accent: #00a3e0; --accent-hover: #008cc0; --success: #00a651; --warning: #e67e22;
+            --text: #1a1a2e; --text-light: #4a5568; --bg: #f7fafc; --white: #ffffff;
+            --border: #e2e8f0; --shadow: 0 4px 20px rgba(10, 61, 107, 0.08);
+            --shadow-lg: 0 10px 40px rgba(10, 61, 107, 0.12); --radius: 12px;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; color: var(--text); background: var(--bg); line-height: 1.6; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        header { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 20px rgba(0,0,0,0.15); }
+        .header-top { background: rgba(0,0,0,0.2); padding: 8px 0; font-size: 0.85rem; }
+        .header-top .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px; }
+        .header-top a { color: rgba(255,255,255,0.9); text-decoration: none; }
+        .header-top a:hover { color: var(--accent); }
+        .nav-main { display: flex; justify-content: space-between; align-items: center; padding: 14px 0; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; color: white; }
+        .logo-icon { width: 48px; height: 48px; background: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.1rem; color: var(--primary); }
+        .logo-text h1 { font-size: 1.35rem; font-weight: 800; line-height: 1.2; }
+        .logo-text span { font-size: 0.72rem; opacity: 0.85; font-weight: 500; }
+        nav ul { display: flex; list-style: none; gap: 4px; flex-wrap: wrap; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; padding: 8px 14px; border-radius: 6px; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover, nav a.active { background: rgba(255,255,255,0.15); color: white; }
+        .mobile-toggle { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+        .page-hero { background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%); color: white; padding: 60px 0; text-align: center; }
+        .page-hero h1 { font-size: 2.4rem; font-weight: 800; margin-bottom: 12px; }
+        .page-hero p { opacity: 0.9; max-width: 600px; margin: 0 auto; font-size: 1.1rem; }
+
+        section { padding: 70px 0; }
+        .section-header { text-align: center; margin-bottom: 50px; }
+        .section-header .eyebrow { display: inline-block; background: rgba(0,163,224,0.1); color: var(--accent); padding: 5px 14px; border-radius: 50px; font-size: 0.8rem; font-weight: 700; text-transform: uppercase; margin-bottom: 12px; }
+        .section-header h2 { font-size: 2rem; font-weight: 800; color: var(--primary); margin-bottom: 12px; }
+        .section-header p { color: var(--text-light); max-width: 600px; margin: 0 auto; }
+
+        .clearance-steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; }
+        .c-step { background: white; border-radius: var(--radius); padding: 24px 16px; text-align: center; box-shadow: var(--shadow); border: 1px solid var(--border); transition: all 0.25s; }
+        .c-step:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); }
+        .c-step .num { width: 48px; height: 48px; background: linear-gradient(135deg, var(--primary), var(--accent)); color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 800; font-size: 1.2rem; margin: 0 auto 14px; }
+        .c-step h4 { font-size: 0.95rem; font-weight: 700; color: var(--primary); margin-bottom: 6px; }
+        .c-step p { font-size: 0.85rem; color: var(--text-light); }
+
+        .warning-box { background: #fff8f0; border: 1px solid #f5c6a0; border-left: 5px solid var(--warning); border-radius: 8px; padding: 20px 24px; display: flex; gap: 16px; align-items: flex-start; margin: 30px 0; }
+        .warning-box .icon { font-size: 1.6rem; flex-shrink: 0; }
+        .warning-box strong { color: #b35900; display: block; margin-bottom: 4px; }
+        .warning-box p { color: #7a4a00; font-size: 0.95rem; }
+
+        .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px; }
+        .info-card { background: white; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); border: 1px solid var(--border); }
+        .info-card .card-header { background: linear-gradient(135deg, var(--primary), var(--primary-light)); color: white; padding: 18px 24px; font-weight: 700; font-size: 1.1rem; }
+        .info-card .card-body { padding: 24px; }
+        .info-card ul { list-style: none; }
+        .info-card li { padding: 10px 0; border-bottom: 1px solid var(--border); display: flex; align-items: flex-start; gap: 10px; font-size: 0.95rem; color: var(--text-light); }
+        .info-card li:last-child { border-bottom: none; }
+        .info-card li::before { content: '→'; color: var(--accent); font-weight: 700; flex-shrink: 0; }
+
+        .overview-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 24px; }
+        .overview-card { background: white; border-radius: var(--radius); padding: 28px; box-shadow: var(--shadow); border: 1px solid var(--border); text-align: center; }
+        .overview-card .icon { width: 56px; height: 56px; background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 14px; display: flex; align-items: center; justify-content: center; margin: 0 auto 18px; font-size: 1.5rem; color: white; }
+        .overview-card h3 { font-size: 1.15rem; font-weight: 700; color: var(--primary); margin-bottom: 10px; }
+        .overview-card p { color: var(--text-light); font-size: 0.95rem; }
+
+        footer { background: var(--primary-dark); color: rgba(255,255,255,0.7); padding: 40px 0 24px; font-size: 0.9rem; }
+        .footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px; padding-bottom: 24px; border-bottom: 1px solid rgba(255,255,255,0.1); margin-bottom: 20px; }
+        .footer-logo { display: flex; align-items: center; gap: 10px; color: white; font-weight: 700; font-size: 1.1rem; }
+        .footer-links { display: flex; gap: 24px; flex-wrap: wrap; }
+        .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; }
+        .footer-links a:hover { color: white; }
+        .copyright { text-align: center; font-size: 0.85rem; }
+
+        @media (max-width: 900px) {
+            nav ul { display: none; }
+            .mobile-toggle { display: block; }
+            nav.open ul { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--primary-dark); padding: 16px; }
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="header-top">
+        <div class="container">
+            <div style="display:flex;gap:20px;flex-wrap:wrap;">
+                <a href="tel:81897101">📞 8189 7101</a>
+                <a href="mailto:aubo.sere@dsv.com">✉️ aubo.sere@dsv.com</a>
+            </div>
+            <div style="font-weight:600;">Safe • Compliant • On Time</div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="nav-main">
+            <a href="ad-customs-index.html" class="logo">
+                <div class="logo-icon">AD</div>
+                <div class="logo-text"><h1>AD CUSTOMS</h1><span>CLEARANCE & LOGISTICS SOLUTIONS</span></div>
+            </a>
+            <button class="mobile-toggle" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+            <nav>
+                <ul>
+                    <li><a href="ad-customs-index.html">Home</a></li>
+                    <li><a href="ad-customs-about.html">About</a></li>
+                    <li><a href="ad-customs-process.html">Import Process</a></li>
+                    <li><a href="ad-customs-documents.html">Documents</a></li>
+                    <li><a href="ad-customs-clearance.html">Clearance</a></li>
+                    <li><a href="ad-customs-biosecurity.html" class="active">Biosecurity</a></li>
+                    <li><a href="ad-customs-contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+
+<section class="page-hero">
+    <div class="container">
+        <h1>Biosecurity, Ports & Delivery</h1>
+        <p>NAQIA procedures, port & terminal rules, and options for land transport after clearance.</p>
+    </div>
+</section>
+
+<!-- NAQIA -->
+<section>
+    <div class="container">
+        <div class="section-header">
+            <div class="eyebrow">Section 10</div>
+            <h2>NAQIA / Biosecurity Procedures</h2>
+            <p>Used vehicles must be cleared by NAQIA (or the current authority – Biosecurity PNG) before release into PNG</p>
+        </div>
+        <div class="clearance-steps">
+            <div class="c-step">
+                <div class="num">1</div>
+                <h4>Apply for Permit</h4>
+                <p>Biosecurity permit (before arrival)</p>
+            </div>
+            <div class="c-step">
+                <div class="num">2</div>
+                <h4>Submit Details</h4>
+                <p>Vehicle details and documents</p>
+            </div>
+            <div class="c-step">
+                <div class="num">3</div>
+                <h4>Inspection</h4>
+                <p>At port or designated facility</p>
+            </div>
+            <div class="c-step">
+                <div class="num">4</div>
+                <h4>Clearance</h4>
+                <p>Clearance certificate issued</p>
+            </div>
+        </div>
+        <div class="warning-box">
+            <div class="icon">⚠️</div>
+            <div>
+                <strong>Important</strong>
+                <p>Requirements may change. Always confirm the current authority and procedures with Biosecurity PNG. Proper cleaning of the vehicle before export significantly reduces inspection issues.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Port & Terminal -->
+<section style="background:white;">
+    <div class="container">
+        <div class="section-header">
+            <div class="eyebrow">Section 11</div>
+            <h2>Port & Terminal Procedures</h2>
+            <p>What happens at the port once your vehicle arrives</p>
+        </div>
+        <div class="info-grid">
+            <div class="info-card">
+                <div class="card-header">🏗️ Wharf Procedures</div>
+                <div class="card-body">
+                    <ul>
+                        <li>Submit shipping documents</li>
+                        <li>Pay wharfage / handling charges</li>
+                        <li>Vehicle inspection and documentation</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="info-card">
+                <div class="card-header">📦 Terminal Storage</div>
+                <div class="card-body">
+                    <ul>
+                        <li>Vehicles may be stored at the terminal or customs wharf</li>
+                        <li>Be aware of the 30-day rule</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="warning-box">
+            <div class="icon">🚨</div>
+            <div>
+                <strong>Critical Warning – 30-Day Rule</strong>
+                <p>If a vehicle remains at the Customs wharf for more than 30 days, it can be forfeited under PNG Customs regulations. Arrange clearance and collection promptly.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Land Transport -->
+<section>
+    <div class="container">
+        <div class="section-header">
+            <div class="eyebrow">Section 12</div>
+            <h2>Land Transport & Delivery</h2>
+            <p>Once cleared, vehicles are released to the importer or transport company for delivery to the destination</p>
+        </div>
+        <div class="overview-grid">
+            <div class="overview-card">
+                <div class="icon">🚗</div>
+                <h3>Self-Collection</h3>
+                <p>Importer can collect the vehicle directly after all clearances are completed.</p>
+            </div>
+            <div class="overview-card">
+                <div class="icon">🚛</div>
+                <h3>Transport Company / Trucking</h3>
+                <p>Arrange a transport company for inland delivery to your preferred location.</p>
+            </div>
+            <div class="overview-card">
+                <div class="icon">📦</div>
+                <h3>Container Haulage</h3>
+                <p>For containerised shipments – specialised haulage services available.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <div class="logo-icon" style="width:36px;height:36px;font-size:0.9rem;">AD</div>
+                AD CUSTOMS — Clearance & Logistics Solutions
+            </div>
+            <div class="footer-links">
+                <a href="ad-customs-index.html">Home</a>
+                <a href="ad-customs-about.html">About</a>
+                <a href="ad-customs-process.html">Process</a>
+                <a href="ad-customs-documents.html">Documents</a>
+                <a href="ad-customs-clearance.html">Clearance</a>
+                <a href="ad-customs-contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2025 AD Customs Clearance & Logistics Solutions. Your Cargo – Our Commitment.<br>
+            This guide provides general information. Always confirm current requirements with PNG Customs and Biosecurity PNG.
+        </div>
+    </div>
+</footer>
+</body>
+</html>
